@@ -2,11 +2,12 @@
 
 import { Module } from '@nestjs/common';
 import { UsuarioModule } from './usuario/usuario.module';
+import { FilmeModule } from './filmes/filme.module';
 
 
 
 @Module({
-  imports: [UsuarioModule],
+  imports: [UsuarioModule, FilmeModule],
   controllers: [],
   providers: [],
 })

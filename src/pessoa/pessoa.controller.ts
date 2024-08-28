@@ -7,8 +7,11 @@ import { RetornoPessoaDTO } from "./dto/retornoPessoa.dto";
 import { ListaPessoaDTO } from "./dto/listaPessoa.dto";
 import { loginPessoaDTO } from "./dto/loginPessoa.dto";
 import { alteraPessoaDTO } from "./dto/alteraPessoa.dto";
+import { ApiTags } from "@nestjs/swagger";
 
 //decorator responsável por definir que essa classe é um controller, dentro do parenteses é necessário informar o URL desse controller
+
+@ApiTags
 @Controller('/pessoa')
 export class PessoaController{
     //controller com injeção de dependencia da classe de usuários armazenados
